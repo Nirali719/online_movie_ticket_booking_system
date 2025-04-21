@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #e0e6ef;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(https://t3.ftcdn.net/jpg/08/68/51/04/360_F_868510427_vsvN67LV1zSmLMyXMOFG05tRCmTAj1xL.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+ 
+    .login-container {
+      background-color:lightblue;
+      padding: 40px 80px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      max-width: 1000px;
+      width: 600px;
+      text-align: center;
+    }
+ 
+
+    .login-box h2 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .input-group {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .input-group label {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 20px;
+      font-size: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 20px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      background: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background: #0d47a1;
+    }
+
+    .register-link {
+      margin-top: 20px;
+      font-size: 1.4rem;
+    }
+
+    .register-link a {
+      color: #0d47a1;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .register-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .login-box h2 {
+        font-size: 2rem;
+      }
+
+      .input-group label,
+      .register-link,
+      .login-btn {
+        font-size: 1.2rem;
+      }
+
+      .input-group input {
+        font-size: 1.2rem;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="username"><b>Username</b></label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="input-group">
+          <label for="password"><b>Password</b></label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit" class="login-btn"><a href="index.html">Login</a></button>
+      </form>
+      <p class="register-link">Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+  </div>
+</body>
+</html>
